@@ -1,0 +1,330 @@
+*margin {
+    margin:0% ;
+}
+
+.body {
+    background-color: aqua;
+}
+
+.menn {
+    display: flex;
+    flex-wrap: nowrap;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+background-color: black;
+}
+   
+  
+    
+
+.lays{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    
+}
+.men{
+    border: 6px violet solid;
+    margin: 3px;
+    padding: 1px;
+    height: 150px;
+    width: 200px;
+    background-image: linear-gradient(to bottom, black , yellow);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color: violet;
+    transform: rotate(30deg);
+    transition: all 0,5s;
+}
+.dosA {
+    transform: rotate(-30deg);
+}
+.men:hover{
+    color: blue;
+    height: 200px;
+    width: 250px;
+}
+
+.square img {
+    background-size: cover;
+    height: 150px;
+    width: 200px;
+background-attachment: fixed;
+}
+.amarillo {
+    display: inline-block;
+    justify-content: space-evenly;
+    color: black;
+    background-color: white;
+    border: 6px black solid;
+    height: 200px;
+    width: 300px;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.amarillo:hover {
+    color: blue;
+    
+    border: 6px darkviolet solid;
+}
+.box{
+    color: darkviolet;
+    height: 50px;
+    width: 80px;
+}
+.mouse{
+    color: green;
+    height: 50px;
+    width: 80px;
+}
+
+@keyframes animacion {
+    0%{
+        width: 0px;
+    }
+    10%{
+        width: 200px;
+    }
+    20%{
+        width: 300px;
+    }
+    30%{
+        width: 400px;
+    }
+    40%{
+        width: 500px;
+    }
+    50%{
+        width: 600px;
+    }
+
+    60%{
+        width: 700px;
+    }
+
+    70%{
+        width: 800px;
+    }
+
+    80%{
+        width: 900px;
+    }
+
+    90% {
+        width: 1000px;
+    }
+    100%{
+        width: 1400px;
+    }
+
+}
+
+.background{
+    background-color: yellow;
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    color: black;
+    height: 60px;
+    width: 100px;
+    display: flex;
+    justify-content: end;
+    
+}
+
+ 
+
+.nacho{
+    height: 100px;
+    width: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    background-image: linear-gradient(to bottom, rgba(46, 42, 42, 0.63) , rgb(162, 165, 165));
+}
+
+.login{
+    border: 1px yellow solid;
+    margin: 2px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+
+}
+.joro {
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    background-color: black;
+    
+    text-align: center;
+}
+
+.formularioUno {
+    display: grid;
+    grid-template-columns: 100%;
+}
+.formCuatro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.tamaño {
+    width: 200px;
+    position: relative;
+    left: 560px;
+    border: 2px black solid;
+color: black;  }
+
+  .tamañoo {
+    
+    border: 8px black solid;
+  }
+  .goBack{
+    color: white;
+    border: 4px yellow solid;
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  .simon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tamañi{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 620px;
+  }
+  .form {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 3px white solid;
+  }
+
+  .principal{
+    background-image: url(/img/apple-mac-marzo-reporte.jpg_1504959168.webp);
+    background-color: white;
+    background-size: cover;
+  }
+  .macs{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+.pic{
+    background-image: url(/img/734caa02-239d-468d-a87b-3329f3c0024a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+padding-top:150px;
+border: 1px black solid;
+}
+.pik{
+    background-image: url(/img/iphone-13-2473969.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+padding-top:150px;
+border: 1px black solid;
+}
+.pika{
+    background-image: url(/img/airpods.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+padding-top: 150px;
+border: 1px black solid;
+}
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+ .img-fluid{
+    height: 100%;
+  width: 100%;
+  object-fit: fill;
+ }
+
+
+  .icon{
+    height: 100px;
+    width: 100px;
+  }
+
+  .producto{
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px black ;
+  }
+
+  .precioProducto{
+    font-weight: 700;
+    border: 2px black solid;
+    width: 140px;
+  }
+
+  /* .boton{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+  } */
+
+  .photoo{
+    width: 250px;
+    height: 200px;
+  }
+  .list{
+    background-image: url(/img/Icon-Mac.svg.png);
+    background-size: contain;
+    display: inline-block;
+    justify-content: space-evenly;
+    height: auto;
+    width: 450px;
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom:  20px;
+    box-shadow: 2px 6px 3px 3px black;
+    font-weight: 300;
+    color: black;
+  }
+
+  .ton{
+
+    height: 40px;
+
+  }
+  .carro{
+    text-align: end;
+  }
