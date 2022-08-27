@@ -3,7 +3,10 @@
 }
 
 .body {
-    background-color: aqua;
+    background-color: black;
+}
+.bodyy {
+    background-color: black;
 }
 
 .menn {
@@ -15,7 +18,23 @@ justify-content: space-evenly;
 background-color: black;
 }
    
-  
+.menuPrincipal {
+    color: white;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .textoWear {
+    font: 1rem sans-serif;
+    font-style: italic;
+  }
+  .mapaUno {
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .mapaAlvin {
+    width: 100%;
+  }
     
 
 .lays{
@@ -327,4 +346,26 @@ border: 1px black solid;
   }
   .carro{
     text-align: end;
+  }
+
+  .cuestionDos {
+    text-align: center;
+  }
+
+  .faqMil {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .ayudaLorem {
+    color: #fff;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .respuesta {
+    font-family: 'Courier New', Courier, monospace;
+  }  
+  .recomendado{
+    text-align: center;
+    color: yellow;
   }

@@ -13,6 +13,7 @@
    // } 
    
    let formulario= document.getElementById("formulario")
+   
 
    formulario.addEventListener("submit", (e) =>{
        e.preventDefault();
@@ -38,8 +39,9 @@
         imageUrl: 'https://www.apple.com/v/mac-mini/p/images/overview/hero__x8ruukomx2au_large_2x.jpg',
         imageWidth: 400,
         imageHeight: 200,
-        imageAlt: 'Custom image',
+        imageAlt: 'Mac Image',
       })
    })
+
 
 
