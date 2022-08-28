@@ -9,10 +9,10 @@ fetch("./data.json")
         li.innerHTML= `
         
         <h3>  ${producto.nombre} </h3>
-        <img class="photoo" src=/img/MacBook-portada.webp alt="Products" title="Product">
+        <img class="photoo" src=/img/steveapple.webp alt="Products" title="Product">
         <p>  ${producto.descripcion} </p>
         <p class="precioProducto">Precio:$${producto.precio} </p>
-        <button id="boton ${producto.id}" >  Agregar </button>
+        <a href="/Clase 1/htmls/pages/mac.html" target="_blank"> <button id="boton ${producto.id}" class="but" >  Buy </button></a>
         <hr />
         `
         ;

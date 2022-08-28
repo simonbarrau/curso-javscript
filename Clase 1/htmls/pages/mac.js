@@ -7,6 +7,8 @@ const contadorCarrito= document.getElementById("contadorCarrito")
 const precioTotal= document.getElementById("precioTotal")
 let carrito=[]
 
+
+
 document.addEventListener(`DOMContentLoaded`, () =>{
     if(sessionStorage.getItem(`carrito`)){
         carrito = JSON.parse(sessionStorage.getItem(`carrito`))
@@ -18,6 +20,8 @@ botonVaciar.addEventListener("click", () =>{
     carrito.length=0
     actualizarCarrito()
 })
+
+
 stockCompus.forEach((producto)=> {
     const div= document.createElement("div")
     div.innerHTML=`
@@ -40,18 +44,14 @@ const agregarALCarro = (prodId)=> {
     
 
         const item =stockCompus.find((prod)=>prod.id === prodId)
-        carrito.push(item)
+        carrito.push(item);
         console.log(carrito);
-    
-    actualizarCarrito()
-}
+        actualizarCarrito();
 
-const eliminarDelCarro= (prodId) => {
-    const item= carrito.find((prod) => prod.id === prodId)
-    const indice=carrito.indexOf(item)
-    carrito.splice(indice, 1)
-    actualizarCarrito()
 }
+ 
+
+
 
 const actualizarCarrito = () => {
 
@@ -60,11 +60,11 @@ contenedorCarrito.innerHTML=" "
         const div= document.createElement("div")
         div.className= ("productoEnCarrito")
         div.innerHTML=`
-        <p>${prod.nombre}</p>
-        <p>${prod.descripcion}</p>
-        <p> Precio:${prod.precio}</p>
-        <p >cantidad:<span id="cantidad">${prod.cantidad}</span></p>
-        <button onclick="eliminarDelCarrito( ${prod.id})" class="boton-eliminar"></button>
+        <div class="inside">
+        <p >${prod.nombre}</p>
+        <p  > Precio:${prod.precio}</p>
+        <p cantidad >cantidad:<span id="cantidad">${prod.cantidad}</span></p>
+        </div>
     
         `
         contenedorCarrito.appendChild(div)
@@ -74,3 +74,17 @@ contenedorCarrito.innerHTML=" "
     contadorCarrito.innerText = carrito.length
     precioTotal.innerText= carrito.reduce((acc,prod)=> acc + prod.precio, 0)
 }
+
+let finish= document.getElementById("exampleModal")
+
+finish.addEventListener("submit", (e) =>{
+    e.preventDefault(); 
+   
+    Swal.fire({
+        icon: 'success',
+        title: '¡Gracias por confiar!',
+        text: 'Su compra ha sido realizada con exito!',
+        footer: '<a href="">A disfrutarlo!</a>'
+      })
+
+})  

@@ -6,7 +6,7 @@
     background-color: black;
 }
 .bodyy {
-    background-color: black;
+    background-color: aliceblue;
 }
 
 .menn {
@@ -27,10 +27,12 @@ background-color: black;
   .textoWear {
     font: 1rem sans-serif;
     font-style: italic;
+    color: wheat;
   }
   .mapaUno {
-    color: red;
+    color: yellow;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
   }
   .mapaAlvin {
     width: 100%;
@@ -258,7 +260,7 @@ padding-top:150px;
 border: 1px black solid;
 }
 .pik{
-    background-image: url(/img/iphone-13-2473969.webp);
+    background-image: url(/img/steve.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -268,7 +270,7 @@ padding-top:150px;
 border: 1px black solid;
 }
 .pika{
-    background-image: url(/img/airpods.png);
+    background-image: url(/img/AskingForHelp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -345,7 +347,7 @@ border: 1px black solid;
 
   }
   .carro{
-    text-align: end;
+    text-align: center;
   }
 
   .cuestionDos {
@@ -368,4 +370,27 @@ border: 1px black solid;
   .recomendado{
     text-align: center;
     color: yellow;
+  }
+
+  .but{
+    background-color: aqua;
+    color: black;
+    font-size: large;
+  }
+  .inside{
+    border: 1px black solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(/img/steve.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: end;
+  }
+
+  .carrBoton{
+    background-color: white;
+    height: 50px;
+    width: 55px;
+    background-image: url(/img/steve.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
   }

@@ -64,7 +64,7 @@ li.innerHTML= `
 <p class="card-text">Descuento: ${item.descuento}</p>
 <p class="card-text">Stock: ${item.stock}</p>
 </div>
-<button class="btn btn-success"> ¡A aprovechar el descuento!</button>
+<button class="btn btn-success"> ¡Ultima tecnologia en el mercado!</button>
 </div>
 `;
 
