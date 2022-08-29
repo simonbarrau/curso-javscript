@@ -38,6 +38,8 @@ stockCompus.forEach((producto)=> {
     boton.addEventListener("click", ()=>{
         agregarALCarro(producto.id)
     })
+
+ 
 })
 
 const agregarALCarro = (prodId)=> {
@@ -48,6 +50,15 @@ const agregarALCarro = (prodId)=> {
         console.log(carrito);
         actualizarCarrito();
 
+        Swal.fire({
+            icon: 'success',
+            title: '¡Steve Jobs le agradece!',
+            text: 'Su elemento ha sido agregado al carrito exitosamente!',
+            imageUrl: 'https://media.diepresse.com/images/thumb/q75/607x364/f/9/0/688016/applechef_steve_jobs_tritt_stevejobs20110825152915.jpg',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Steve Image'
+          })
 }
  
 
@@ -75,16 +86,3 @@ contenedorCarrito.innerHTML=" "
     precioTotal.innerText= carrito.reduce((acc,prod)=> acc + prod.precio, 0)
 }
 
-let finish= document.getElementById("exampleModal")
-
-finish.addEventListener("submit", (e) =>{
-    e.preventDefault(); 
-   
-    Swal.fire({
-        icon: 'success',
-        title: '¡Gracias por confiar!',
-        text: 'Su compra ha sido realizada con exito!',
-        footer: '<a href="">A disfrutarlo!</a>'
-      })
-
-})  

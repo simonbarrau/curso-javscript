@@ -81,6 +81,7 @@ input.addEventListener("input", () => {
     if(input.value.length === 5){
         titulo.className="background"
     }
+    
 })
 
 
