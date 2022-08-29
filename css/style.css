@@ -20,14 +20,15 @@ background-color: black;
    
 .menuPrincipal {
     color: white;
-    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     text-align: center;
   }
 
   .textoWear {
-    font: 1rem sans-serif;
-    font-style: italic;
+    font: 1.5rem sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     color: wheat;
+    
   }
   .mapaUno {
     color: yellow;
@@ -361,7 +362,6 @@ border: 1px black solid;
   }
   .ayudaLorem {
     color: #fff;
-    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   .respuesta {
